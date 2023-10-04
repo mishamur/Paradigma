@@ -22,7 +22,7 @@ namespace Paradigma.Model
         private int _timeout;
         private int _dataSize;
         private double i;
-        private bool IsGenerating;
+        public bool IsGenerating { get; private set; }
         public double Amplitude { get; private set; }
         public double Frequency { get; private set; }
         public double CurrentX { get => i; }

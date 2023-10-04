@@ -7,6 +7,7 @@ namespace Paradigma.Model.Interfaces
 {
     public interface IGenerator
     {
+        bool IsGenerating { get; }
         double Amplitude { get; }
         double Frequency { get; }
         Task Generate();

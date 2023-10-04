@@ -17,10 +17,13 @@ namespace Paradigma.Model
         private CancelGenerate IsCancelGenerate;
 
         private Queue<Point> points = new Queue<Point>();
-        
-        private double _step;
+        //шаг для генерации точек
+        private double _step; 
+        //имитация работы
         private int _timeout;
+        //размер массива точек
         private int _dataSize;
+        //текущая координата X
         private double i;
         public bool IsGenerating { get; private set; }
         public double Amplitude { get; private set; }
